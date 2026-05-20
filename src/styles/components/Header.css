@@ -1,0 +1,67 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(12px);
+  background-color: rgba(11, 25, 44, 0.9);
+  border-bottom: 1px solid rgba(197, 160, 89, 0.3);
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  width: 150px;
+}
+
+.menu-icon {
+  color: var(--color-antique-gold);
+  cursor: pointer;
+}
+
+.logo-text {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--color-antique-gold);
+  letter-spacing: 0.05em;
+}
+
+.btn-agendar {
+  display: inline-block;
+  background-color: var(--color-antique-gold);
+  color: var(--text-on-gold);
+  padding: 12px 24px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-agendar:hover {
+  filter: brightness(1.1);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  border-color: #050a10;
+}
+
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 1.2rem;
+  }
+}
