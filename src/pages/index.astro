@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import ServicesBento from '../components/ServicesBento.vue';
+import Features from '../components/Features.astro';
+import CtaSection from '../components/CtaSection.astro';
+import Footer from '../components/Footer.astro';
+import BottomNavMobile from '../components/BottomNavMobile.vue';
+---
+
+<Layout title="Cavalheiros | Estética Masculina & SPA Premium">
+	<Header />
+	<main>
+		<Hero />
+		<ServicesBento client:visible />
+		<Features />
+		<CtaSection />
+	</main>
+	<Footer id="footer" />
+	<BottomNavMobile client:load />
+</Layout>
+
+<style>
+	main {
+		overflow-x: hidden;
+	}
+</style>

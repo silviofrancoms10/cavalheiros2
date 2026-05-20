@@ -1,0 +1,108 @@
+---
+---
+<section class="features">
+  <div class="container">
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="icon-container">
+          <span class="material-symbols-outlined icon">lock</span>
+        </div>
+        <h3 class="feature-title">Higiene Impecável</h3>
+        <p class="feature-desc">Tratamentos profundos que purificam, renovam e preparam sua pele para transmitir vitalidade, saúde e uma presença impecável.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="icon-container">
+          <span class="material-symbols-outlined icon">medical_services</span>
+        </div>
+        <h3 class="feature-title">Estética de Alta Performance</h3>
+        <p class="feature-desc">Especialistas dedicados a lapidar seus traços, garantindo uma aparência de sucesso, alinhamento perfeito e máxima autoconfiança.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="icon-container">
+          <span class="material-symbols-outlined icon">diamond</span>
+        </div>
+        <h3 class="feature-title">Privacidade e Exclusividade</h3>
+        <p class="feature-desc">Relaxe em um ambiente reservado, onde cuidamos de cada detalhe para que você saia com uma presença inesquecível e marcante.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .features {
+    padding: 100px 0;
+    background-color: var(--surface-base);
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    text-align: center;
+  }
+
+  .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    padding: 48px 24px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .feature-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(197, 160, 89, 0.3);
+    transform: translateY(-5px);
+  }
+
+  .icon-container {
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    background: var(--surface-low);
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 40px;
+    transition: all 0.3s ease;
+  }
+
+  .feature-item:hover .icon-container {
+    background: rgba(197, 160, 89, 0.1);
+    border-color: var(--color-antique-gold);
+  }
+
+  .icon {
+    transform: rotate(-45deg);
+    color: var(--color-antique-gold);
+    font-size: 28px;
+  }
+
+  .feature-title {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: var(--text-on-surface);
+  }
+
+  .feature-desc {
+    color: var(--text-variant);
+    font-size: 1rem;
+    max-width: 300px;
+  }
+
+  @media (max-width: 768px) {
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 64px;
+    }
+  }
+</style>

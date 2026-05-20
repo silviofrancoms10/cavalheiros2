@@ -1,0 +1,119 @@
+---
+
+---
+
+<section class="hero">
+  <div class="hero-bg">
+    <img src="/src/assets/capa.jpg" alt="SPA Environment" />
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-content">
+    <span class="hero-label">CAVALHEIROS SPA</span>
+    <h1 class="hero-title">Sua Imagem é o Seu Maior Cartão de Visitas</h1>
+    <p class="hero-subtitle">
+      A verdadeira beleza masculina nasce da higiene impecável e do autocuidado
+      estratégico. Descubra uma experiência premium desenhada para forjar uma
+      presença forte, magnética e inconfundível.
+    </p>
+    <a href="#servicos" class="btn-cta">VER SERVIÇOS</a>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding: 80px 0;
+  }
+
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, var(--surface-base), transparent);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+  }
+
+  .hero-label {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: var(--color-antique-gold);
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: var(--text-on-surface);
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-variant);
+    max-width: 600px;
+    margin-bottom: 40px;
+  }
+
+  .btn-cta {
+    display: inline-block;
+    background: transparent;
+    border: 2px solid var(--color-antique-gold);
+    color: var(--color-antique-gold);
+    padding: 16px 40px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-cta:hover {
+    background: var(--color-antique-gold);
+    color: var(--text-on-gold);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    border-color: #050a10;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      min-height: 70vh;
+      text-align: center;
+    }
+    .hero-subtitle {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+</style>
