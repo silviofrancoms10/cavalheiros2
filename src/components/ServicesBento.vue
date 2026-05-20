@@ -4,7 +4,7 @@
       <div class="services-grid">
         <div class="service-card large">
           <div class="card-image">
-            <img src="/public/assets/massagem.png" alt="Massagem Relaxante" />
+            <img src="/assets/massagem.png" alt="Massagem Relaxante" />
           </div>
           <div class="card-content">
             <span class="card-label">MASSAGEM</span>
@@ -14,7 +14,7 @@
 
         <div class="service-card vertical">
           <div class="card-image">
-            <img src="/public/assets/pele.png" alt="Limpeza de Pele" />
+            <img src="/assets/pele.png" alt="Limpeza de Pele" />
           </div>
           <div class="card-content">
             <span class="card-label">SKIN CARE</span>
@@ -24,7 +24,7 @@
 
         <div class="service-card medium">
           <div class="card-image">
-            <img src="/public/assets/design sombrancelha.png" alt="Design / Depilação" />
+            <img src="/assets/design-sombrancelha.png" alt="Design / Depilação" />
           </div>
           <div class="card-content">
             <span class="card-label">DESIGN</span>
@@ -34,7 +34,7 @@
 
         <div class="service-card medium">
           <div class="card-image">
-            <img src="/public/assets/depilação.webp" alt="Depilação Masculina" />
+            <img src="/assets/depilacao.webp" alt="Depilação Masculina" />
           </div>
           <div class="card-content">
             <span class="card-label">DEPILAÇÃO</span>

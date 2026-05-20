@@ -5,7 +5,7 @@
 <header class="header">
   <div class="container header-container">
     <div class="logo">
-      <span class="logo-text">CAVALHEIROS</span>
+      <img class="logo-img" src="/assets/logocavalheiros.png" alt="Logo" />
     </div>
     <nav class="nav">
       <a
@@ -44,6 +44,12 @@
     gap: 12px;
   }
 
+  .logo-img {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 150px;
+  }
+
   .menu-icon {
     color: var(--color-antique-gold);
     cursor: pointer;
@@ -72,7 +78,7 @@
     filter: brightness(1.1);
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-    border-color: #050A10;
+    border-color: #050a10;
   }
 
   @media (max-width: 768px) {
